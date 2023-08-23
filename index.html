@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dj spykid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="djspykidlogo.jpg" alt="spykid-logo" height="90px">
+    <header>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WEDDINGS</a></li>
+                <li><a href="#">VIRTUAL EVENT DJ</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <main class="kell">
+        <h3>EVENT EXPERT</h3>
+        <h1>DJ SPYKID & ASSOCIATES</h1>
+        <p>A man-owned Nigeria based DJ company that specializes in high-energy, fun, unique weddings, parties, corporate functions and virtual events. We are diversity and inclusion experts who proudly serve LGBTQ+ as well as multicultural weddings and events.</p>
+        <h2 class="btm">VIRTUAL EVENT DJ SERVICES</h2>  
+        <h2><strong>DJ SPYKID & ASSOCIATES</strong> offers virtual DJ services to help you keep the party <br> going!</h2>  
+        <button>BOOK NOW </button>
+    </main>
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const li = document.querySelector("li"); // Changed to "ul" instead of ".ul"
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            li.classList.toggle("active");
+        });
+
+        document.querySelectorAll("li").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            li.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>
